@@ -1,6 +1,7 @@
 import { CgIndieHackers } from 'react-icons/cg'
 import { FaDev, FaFreeCodeCamp, FaMediumM, FaReddit } from 'react-icons/fa'
 import { HiSparkles, HiTicket } from 'react-icons/hi'
+import { RiRobot2Fill } from "react-icons/ri"
 import { SiGithub, SiProducthunt, SiYcombinator } from 'react-icons/si'
 import HashNodeIcon from 'src/assets/icon_hashnode.png'
 import LobstersIcon from 'src/assets/icon_lobsters.png'
@@ -121,11 +122,11 @@ export const SUPPORTED_CARDS: SupportedCardType[] = [
   },
   {
     value: 'ai',
-    icon: <HiSparkles color="#F1D247" />,
+    icon: <RiRobot2Fill color="#FB6720" />,
     analyticsTag: 'ai',
-    label: 'Powered by AI',
+    label: '投资人',
     component: AICard,
     type: 'supported',
-    badge: 'ALPHA',
+    badge: 'agent',
   },
 ]

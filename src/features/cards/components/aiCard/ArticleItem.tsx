@@ -1,4 +1,5 @@
 import { BiCommentDetail } from 'react-icons/bi'
+import { MdCreditScore } from "react-icons/md"
 import { GoDotFill } from 'react-icons/go'
 import { MdAccessTime } from 'react-icons/md'
 import { CardItemWithActions, CardLink } from 'src/components/Elements'
@@ -52,9 +53,9 @@ const ArticleItem = (props: BaseItemPropsType<Article>) => {
               <span className="rowItem" title={new Date(item.published_at).toUTCString()}>
                 <MdAccessTime className="rowItemIcon" /> {format(new Date(item.published_at))}
               </span>
-              <span className="rowItem">
-                <BiCommentDetail className={'rowTitleIcon'} />
-                {item.comments} comments
+              <span className="rowItem" style={{color: '#FB6720'}}>
+                <MdCreditScore className={'rowTitleIcon'} color="#FB6720" />
+                {item.score.toFixed(1)}
               </span>
             </div>
           )}

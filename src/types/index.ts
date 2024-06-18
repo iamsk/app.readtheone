@@ -49,6 +49,7 @@ export type Article = BaseEntry & {
   tags: Array<string>
   reactions: number
   comments: number
+  score: number
   image_url: string
   source: string
   original_url?: string
