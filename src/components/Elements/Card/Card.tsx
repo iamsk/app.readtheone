@@ -75,7 +75,7 @@ export const Card = ({
         {badge && <span className="blockHeaderBadge">{badge}</span>}
       </div>
 
-      {canAdsLoad && adsConfig.enabled && withAds && <AdvBanner />}
+      {canAdsLoad && adsConfig.enabled && withAds}
 
       <div className="blockContent scrollable">{children}</div>
     </div>
