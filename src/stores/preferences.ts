@@ -117,7 +117,7 @@ export const useUserPreferences = create(
       ],
       cardsSettings: {},
       maxVisibleCards: 3,
-      theme: 'dark',
+      theme: 'light',
       onboardingCompleted: false,
       onboardingResult: null,
       searchEngine: 'chatgpt',
