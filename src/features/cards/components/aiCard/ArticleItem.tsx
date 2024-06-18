@@ -36,6 +36,7 @@ const ArticleItem = (props: BaseItemPropsType<Article>) => {
               <span className="subTitle">{item.title}</span>
             </CardLink>
           </p>
+          <p className="rowDescription">{item.description}</p>
           {listingMode === 'compact' && (
             <div className="rowDetails">
               <span className="rowItem capitalize">

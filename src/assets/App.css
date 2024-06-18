@@ -191,7 +191,9 @@ a {
 }
 
 .logoText {
-  height: 16px;
+  height: 36px;
+  margin-top: 8px;
+  margin-left: 8px;
   width: auto;
   fill: var(--app-name-text-color);
 }

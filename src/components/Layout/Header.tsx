@@ -5,7 +5,7 @@ import { IoMdSunny } from 'react-icons/io'
 import { MdDoDisturbOff } from 'react-icons/md'
 import { RxArrowLeft } from 'react-icons/rx'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { ReactComponent as HackertabLogo } from 'src/assets/logo.svg'
+import { ReactComponent as HackertabLogo } from 'src/assets/theone.svg'
 import { SearchBar } from 'src/components/Elements/SearchBar'
 import { UserTags } from 'src/components/Elements/UserTags'
 import { Changelog } from 'src/features/changelog'
@@ -65,13 +65,13 @@ export const Header = () => {
     <>
       <header className="AppHeader">
         <span className="AppName">
-          <i className="logo">
-            <CgTab />
-          </i>{' '}
+          {/*<i className="logo">*/}
+          {/*  <CgTab />*/}
+          {/*</i>{' '}*/}
           <Link to="/">
-            <HackertabLogo aria-label="hackertab.dev" className="logoText" />
+            <HackertabLogo aria-label="readtheone.com" className="logoText" />
           </Link>
-          <Changelog />
+          {/*<Changelog />*/}
         </span>
         <SearchBar />
         <div className="extras">
@@ -98,7 +98,8 @@ export const Header = () => {
           </Link>
         </div>
         {location.pathname === '/' ? (
-          <UserTags />
+          // <UserTags />
+          <div></div>
         ) : (
           <div className="backToHome">
             <Link to="/">
