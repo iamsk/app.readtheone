@@ -1,7 +1,7 @@
 #!/bin/bash
 
 build() {
-    echo 'Building Hackertab...'
+    echo 'Building app.readtheone...'
     rm -rf dist
     tsc
     vite build

@@ -55,7 +55,7 @@ const ArticleItem = (props: BaseItemPropsType<Article>) => {
               </span>
               <span className="rowItem" style={{color: '#FB6720'}}>
                 <MdCreditScore className={'rowTitleIcon'} color="#FB6720" />
-                {item.score.toFixed(1)}
+                {item.score && item.score.toFixed(1)}
               </span>
             </div>
           )}

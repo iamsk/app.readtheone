@@ -1,10 +1,10 @@
-name: Deploy Web Version to hackertab.dev
+name: Deploy Web Version to app.readtheone
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - feat/cp-build
+      - master
 env:
   VITE_BUILD_TARGET: 'web'
   VITE_AMPLITUDE_KEY: ${{ secrets.REACT_APP_AMPLITUDE_KEY }}
@@ -36,5 +36,5 @@ jobs:
           host: ${{ secrets.DEPLOY_SSH_HOST }}
           username: ${{ secrets.DEPLOY_SSH_USERNAME }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
-          source: 'dist/'
-          target: '~/hackertab.dev'
+          source: 'dist'
+          target: '/data/www/app.readtheone/'
