@@ -6,11 +6,11 @@ export const LS_ANALYTICS_ID_KEY = 'hackerTabAnalyticsId'
 // Meta
 export const name = 'ReadtheOne'
 export const slogan = '— Stay updated with the latest news and high-quality articles'
-export const repository = 'https://github.com/medyo/hackertab.dev'
+export const repository = 'https://github.com/iamsk/app.readtheone'
 export const ref = 'ref=readtheone.com'
 export const contactEmail = 'hello@readtheone.com'
 export const maxCardsPerRow = 4
-export const supportLink = 'https://github.com/medyo/hackertab.dev/issues'
+export const supportLink = 'https://github.com/iamsk/app.readtheone/issues'
 export const privacyPolicyLink = 'https://www.hackertab.dev/privacy-policy'
 export const termsAndConditionsLink = 'https://www.hackertab.dev/terms-and-conditions'
 export const dataSourcesLink = 'https://www.hackertab.dev/data-sources'

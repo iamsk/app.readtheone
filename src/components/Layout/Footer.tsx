@@ -19,16 +19,16 @@ export const Footer = () => {
         rel="noreferrer">
         <RiCodeSSlashFill className="linkItemIcon" /> Source code
       </a>
-      <a
-        className="linkItem"
-        href={termsAndConditionsLink}
-        onClick={() => trackPageView('Terms And Conditions')}>{`Terms & conditions`}</a>
-      <a
-        className="linkItem"
-        href={privacyPolicyLink}
-        onClick={() => trackPageView('Privacy Policy')}>
-        Privacy policy
-      </a>
+      {/*<a*/}
+      {/*  className="linkItem"*/}
+      {/*  href={termsAndConditionsLink}*/}
+      {/*  onClick={() => trackPageView('Terms And Conditions')}>{`Terms & conditions`}</a>*/}
+      {/*<a*/}
+      {/*  className="linkItem"*/}
+      {/*  href={privacyPolicyLink}*/}
+      {/*  onClick={() => trackPageView('Privacy Policy')}>*/}
+      {/*  Privacy policy*/}
+      {/*</a>*/}
       {appVersion && (
         <a
           className="linkItem"
