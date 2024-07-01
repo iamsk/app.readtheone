@@ -69,7 +69,7 @@ export const CardItemWithActions = ({
     const tags = useUserPreferences
       .getState()
       .userSelectedTags.map((tag) => tag.label.toLocaleLowerCase())
-    window.open(`${reportLink}?tags=${tags.join(',')}&url=${item.url}`, '_blank')
+    window.open(`${item.url}#cusdis_thread`, '_blank')
   }
 
   return (
