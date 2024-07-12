@@ -8,8 +8,8 @@ on:
 env:
   VITE_BUILD_TARGET: 'web'
   VITE_AMPLITUDE_KEY: ${{ secrets.REACT_APP_AMPLITUDE_KEY }}
-  VITE_AMPLITUDE_URL: ${{ secrets.REACT_APP_AMPLITUDE_URL }}
-  VITE_API_URL: ${{ secrets.API_URL }}
+  VITE_AMPLITUDE_URL: 'https://api2.amplitude.com/2/httpapi'
+  VITE_API_URL: 'https://api.readtheone.com/'
 
 jobs:
   build_and_deploy:
