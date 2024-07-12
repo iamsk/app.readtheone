@@ -53,10 +53,11 @@ const ArticleItem = (props: BaseItemPropsType<Article>) => {
               <span className="rowItem" title={new Date(item.published_at).toUTCString()}>
                 <MdAccessTime className="rowItemIcon" /> {format(new Date(item.published_at))}
               </span>
+              {item.score != 0 &&
               <span className="rowItem" style={{color: '#FB6720'}}>
                 <MdCreditScore className={'rowTitleIcon'} color="#FB6720" />
                 {item.score && item.score.toFixed(1)}
-              </span>
+              </span>}
             </div>
           )}
         </>

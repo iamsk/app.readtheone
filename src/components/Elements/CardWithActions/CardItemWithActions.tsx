@@ -81,7 +81,7 @@ export const CardItemWithActions = ({
       />
       {cardItem}
       <div className={`blockActions ${isBookmarked ? 'active' : ''} `}>
-        {source === 'ai' && (
+        {(['ai', 'investor'].indexOf(source) > -1) && (
           <button
             className={`blockActionButton `}
             onClick={onReportClicked}
