@@ -10,6 +10,7 @@ env:
   VITE_AMPLITUDE_KEY: ${{ secrets.REACT_APP_AMPLITUDE_KEY }}
   VITE_AMPLITUDE_URL: 'https://api2.amplitude.com/2/httpapi'
   VITE_API_URL: 'https://api.readtheone.com/'
+  VITE_CLERK_PUBLISHABLE_KEY: ${{ secrets.VITE_CLERK_PUBLISHABLE_KEY }}
 
 jobs:
   build_and_deploy:
