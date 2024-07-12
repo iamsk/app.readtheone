@@ -19,6 +19,7 @@ export function AICard({ meta, withAds }: CardPropsType) {
     isLoading,
     error,
   } = useGetAIArticles({
+    source: meta.value,
     userTopics: userSelectedTags.map((tag) => tag.label.toLocaleLowerCase()),
     config: {
       cacheTime: 0,
@@ -28,7 +29,7 @@ export function AICard({ meta, withAds }: CardPropsType) {
   })
 
   const renderItem = (item: Article, index: number) => (
-    <ArticleItem item={item} key={`ai-${index}`} index={index} analyticsTag={meta.analyticsTag} />
+    <ArticleItem item={item} key={`${meta.analyticsTag}-${index}`} index={index} analyticsTag={meta.analyticsTag} />
   )
 
   return (

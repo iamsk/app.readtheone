@@ -3,9 +3,10 @@ import { axios } from 'src/lib/axios'
 import { ExtractFnReturnType, QueryConfig } from 'src/lib/react-query'
 import { Article } from 'src/types'
 
-const getAIArticles = async (userTopics: string[]): Promise<Article[]> => {
-  return axios.get('/engine/feed/get', {
+const getAIArticles = async (source: string, userTopics: string[]): Promise<Article[]> => {
+  return axios.get('/feeds', {
     params: {
+      source: source,
       tags: userTopics.join(','),
       limit: 50,
     },
@@ -15,14 +16,15 @@ const getAIArticles = async (userTopics: string[]): Promise<Article[]> => {
 type QueryFnType = typeof getAIArticles
 
 type UseGetArticlesOptions = {
+  source: string
   userTopics: string[]
   config?: QueryConfig<QueryFnType>
 }
 
-export const useGetAIArticles = ({ userTopics, config }: UseGetArticlesOptions) => {
+export const useGetAIArticles = ({ source, userTopics, config }: UseGetArticlesOptions) => {
   return useQuery<ExtractFnReturnType<QueryFnType>>({
     ...config,
-    queryKey: ['ai', userTopics.join(',')],
-    queryFn: () => getAIArticles(userTopics),
+    queryKey: [source, userTopics.join(',')],
+    queryFn: () => getAIArticles(source, userTopics),
   })
 }
