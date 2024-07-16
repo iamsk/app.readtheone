@@ -127,7 +127,6 @@ export const SUPPORTED_CARDS: SupportedCardType[] = [
     label: 'AI爱好者',
     component: AICard,
     type: 'supported',
-    badge: 'agent',
   },
   {
     value: 'investor',
@@ -136,6 +135,6 @@ export const SUPPORTED_CARDS: SupportedCardType[] = [
     label: '投资人',
     component: AICard,
     type: 'supported',
-    badge: 'agent',
+    badge: 'alpha',
   },
 ]

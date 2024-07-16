@@ -38,7 +38,7 @@ export function AICard({ meta, withAds }: CardPropsType) {
         items={articles}
         error={error}
         header={
-          !isDone(SHOW_PANEL_FEATURE_FLAG) && (
+          !isDone(SHOW_PANEL_FEATURE_FLAG) && meta.value === 'investor' && (
             <Panel
               variant="information"
               title={
