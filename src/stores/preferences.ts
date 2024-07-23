@@ -116,7 +116,7 @@ export const useUserPreferences = create(
         },
       ],
       cardsSettings: {},
-      maxVisibleCards: 3,
+      maxVisibleCards: 4,
       theme: 'light',
       onboardingCompleted: false,
       onboardingResult: null,
@@ -169,7 +169,8 @@ export const useUserPreferences = create(
       cards: [
         { id: 0, name: 'ai', type: 'supported' },
         { id: 1, name: 'investor', type: 'supported' },
-        { id: 2, name: 'hackernews', type: 'supported' },
+        { id: 2, name: 'xr', type: 'supported' },
+        { id: 4, name: 'vc', type: 'supported' },
       ],
       userCustomCards: [],
       DNDDuration: 'never',

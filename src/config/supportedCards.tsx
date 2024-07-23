@@ -1,7 +1,8 @@
 import { CgIndieHackers } from 'react-icons/cg'
-import { FaDev, FaFreeCodeCamp, FaMediumM, FaReddit } from 'react-icons/fa'
+import { FaDev, FaFreeCodeCamp, FaMediumM, FaReddit, FaLandmark } from 'react-icons/fa'
 import { HiSparkles, HiTicket } from 'react-icons/hi'
-import { RiRobot2Fill } from "react-icons/ri"
+import { RiRobot2Fill, RiAccountPinBoxFill } from "react-icons/ri"
+import { PiVirtualRealityFill, PiOpenAiLogo } from "react-icons/pi"
 import { SiGithub, SiProducthunt, SiYcombinator } from 'react-icons/si'
 import HashNodeIcon from 'src/assets/icon_hashnode.png'
 import LobstersIcon from 'src/assets/icon_lobsters.png'
@@ -122,15 +123,31 @@ export const SUPPORTED_CARDS: SupportedCardType[] = [
   },
   {
     value: 'ai',
-    icon: <RiRobot2Fill color="#FB6720" />,
+    icon: <PiOpenAiLogo color="#FB6720" />,
     analyticsTag: 'ai',
     label: 'AI爱好者',
     component: AICard,
     type: 'supported',
   },
   {
+    value: 'xr',
+    icon: <PiVirtualRealityFill color="#FB6720" />,
+    analyticsTag: 'xr',
+    label: 'XR爱好者',
+    component: AICard,
+    type: 'supported',
+  },
+  {
+    value: 'vc',
+    icon: <FaLandmark color="#FB6720" />,
+    analyticsTag: 'vc',
+    label: '投资机构',
+    component: AICard,
+    type: 'supported',
+  },
+  {
     value: 'investor',
-    icon: <RiRobot2Fill color="#FB6720" />,
+    icon: <RiAccountPinBoxFill color="#FB6720" />,
     analyticsTag: 'investor',
     label: '投资人',
     component: AICard,
